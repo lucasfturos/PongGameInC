@@ -1,5 +1,5 @@
 #define w 20
-#define h 70
+#define h 60
 
 int i, j, k, flag, perdeu, pontosP1, pontosP2;
 int player1Y, player2Y, bolaX, bolaY;
