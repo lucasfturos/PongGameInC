@@ -35,9 +35,9 @@ void draw(int opc) {
     }
     printf("\n\nPontos Jogador: %d", pontosP1);
     if (opc == 1)
-        printf("\nPontos da Bola: %d", pontosP2);
+        printf("\t\t\t   Pontos da Bola: %d", pontosP2);
     else
-        printf("\nPontos do Computador: %d", pontosP2);
+        printf("\t\t     Pontos do Computador: %d", pontosP2);
     printf("\n\nClique em X para Sair\n");
 }
 
