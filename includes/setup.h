@@ -49,7 +49,7 @@ void setupPvE() {
 }
 
 void ball_singlePlayer() {
-    if (bolaY <= 1)
+    if (bolaY <= 2)
         velocidadeY *= -1;
     else if (bolaY >= w - 2)
         velocidadeY *= -1;

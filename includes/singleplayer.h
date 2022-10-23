@@ -15,24 +15,24 @@ void logic_singlePlayer() {
             if (bolaY <= player1Y &&
                 bolaY >= player1Y &&
                 bolaX <= player1Y &&
-                bolaX <= i)
+                bolaX <= i && bolaY <= i)
                 velocidadeX *= -1;
 
-            if (bolaX <= 1 && bolaY >= 1) {
-                pontosP2 += 1;
-                bolaX = rand() % h - 2;
-                bolaY = rand() % w - 2;
-                if (pontosP2 == 10)
-                    perdeu = 1;
-            }
-            else if (bolaX <= player1Y && bolaX <= i) {
-                pontosP1 += 1;
-                bolaX = rand() % h - 2;
-                bolaY = rand() % w - 2;
+            // if (bolaX <= 1 && bolaY >= 1) {
+            //     pontosP2 += 1;
+            //     bolaX = rand() % h - 2;
+            //     bolaY = rand() % w - 2;
+            //     if (pontosP2 == 10)
+            //         perdeu = 1;
+            // }
+            // else if (bolaX <= player1Y && bolaX <= i) {
+            //     pontosP1 += 1;
+            //     bolaX = rand() % h - 2;
+            //     bolaY = rand() % w - 2;
 
-                if (pontosP1 == 10)
-                    perdeu = 1;
-            }
+            //     if (pontosP1 == 10)
+            //         perdeu = 1;
+            // }
         }
     }
 }
